@@ -19,4 +19,5 @@ public class StreamingSvc {
     public Mono<Resource> loadVideos(String title) {
         return Mono.fromSupplier(()->resourceLoader.getResource(String.format(FORMAT,title)));
     }
+    
 }
